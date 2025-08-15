@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev:web": "npm run dev --workspace=web",
-    "dev:api": "uvicorn packages.api.main:app --reload",
+    "dev:api": "python3 -m uvicorn packages.api.main:app --reload",
     "build": "vercel build",
     "start": "vercel start"
   },

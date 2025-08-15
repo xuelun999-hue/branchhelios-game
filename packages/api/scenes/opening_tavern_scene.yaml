@@ -1,0 +1,15 @@
+scene_id: fortress_gate_scene # 我们可以给场景换个 ID
+description: "故事开始于凛风要塞的巨大门前。高耸的城墙上，卫兵艾尔文正警惕地注视着每一个进出的人。一个身披斗篷的流浪者卡琳，靠在墙边的阴影里，似乎在等待什么。而在不远处的布告栏下，祭司莉拉正在向民众分发食物。"
+
+# 参与此场景的 NPC 列表 (保持不变)
+participants:
+  - character_id: guard_elwin_craig
+  - character_id: wanderer_karin
+  - character_id: priest_lyra
+
+# 场景的初始触发器 (我们也可以修改第一句台词)
+initial_triggers:
+  - type: on_scene_load
+    action: "卫兵艾尔文拦住了你，他坚实的臂膀像一堵墙。"
+    target: player
+    initial_dialogue: "站住！报上你的名字和来意。要塞最近戒严。"
